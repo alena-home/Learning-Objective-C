@@ -31,6 +31,16 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Big cat");
             }
         }
+        
+        int i = 0;
+        do {
+            i++;
+            NSLog(@"%d", i);
+            
+            if (i == 10) {
+                i = 0;
+            }
+        } while (i > 0);
     }
     return 0;
 }
