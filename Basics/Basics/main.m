@@ -8,10 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+
+CGFloat circleArea(CGFloat radius) {
+    CGFloat area = M_PI * radius * radius;
+    return area;
+}
+
+CGFloat circleLength(CGFloat radius) {
+    return 2 * M_PI * radius;
+}
+
+CGFloat rectangleArea(CGFloat width, CGFloat height) {
+    return width * height;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        CGFloat radius = 3;
+        NSLog(@"\narea = %f\nlength = %f\nrectArea = %f\n", circleArea(radius), circleLength(radius), rectangleArea(2, 2.3));
     }
     return 0;
 }
+
