@@ -24,8 +24,13 @@ CGFloat rectangleArea(CGFloat width, CGFloat height) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        CGFloat radius = 3;
-        NSLog(@"\narea = %f\nlength = %f\nrectArea = %.3f\n", circleArea(radius), circleLength(radius), rectangleArea(2, 2.3));
+        for (int i = 0; i < 10; ++i) {
+            if (i % 2 == 0) {
+                NSLog(@"Cat");
+            } else {
+                NSLog(@"Big cat");
+            }
+        }
     }
     return 0;
 }
